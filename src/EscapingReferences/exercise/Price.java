@@ -15,7 +15,8 @@ public class Price {
 		rates.put("GBP", 0.6);
 		rates.put("EUR", 0.8);
 	}
-		
+
+	//TODO: We appear to be mutating a value in a get method
 	public Double convert(String toCurrency) {
 		
 		if (toCurrency.equals("USD")) {
@@ -31,7 +32,8 @@ public class Price {
 	public String toString() {
 		return this.value.toString();
 	}
-	
+
+	//TODO: Definitely an escaping reference
 	public Map<String,Double> getRates() {
 		return rates;
 	}

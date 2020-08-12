@@ -28,7 +28,8 @@ public class Book {
 	public String toString() {
 		return title + " by " + author;
 	}
-	
+
+	//TODO: check if Price is immutable
 	public Price getPrice() {
 		return this.price;
 	}
