@@ -13,6 +13,16 @@ public class Main {
             System.out.println(next);
         }
 
+        Customer john = records.getCustomerByName("John");
+        System.out.println(john.getName());
+        john.setName("Derek");
+        System.out.println(john.getName());
+
+        for (Customer next : records.getCustomers().values())
+        {
+            System.out.println(next);
+        }
+
     }
 
 }

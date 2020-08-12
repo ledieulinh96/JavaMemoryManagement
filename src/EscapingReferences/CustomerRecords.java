@@ -18,4 +18,8 @@ public class CustomerRecords {
     public Map<String, Customer> getCustomers() {
         return Collections.unmodifiableMap(this.records);
     }
+
+    public Customer getCustomerByName(String name) {
+        return new Customer(this.records.get(name));
+    }
 }
