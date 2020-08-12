@@ -1,5 +1,6 @@
 package EscapingReferences;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,6 @@ public class CustomerRecords {
     }
 
     public Map<String, Customer> getCustomers() {
-        return this.records;
+        return Collections.unmodifiableMap(this.records);
     }
 }

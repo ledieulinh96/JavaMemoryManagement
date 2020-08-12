@@ -7,7 +7,7 @@ public class Main {
 
         records.addCustomer(new Customer("John"));
         records.addCustomer(new Customer("Simon"));
-
+        //records.getCustomers().clear(); Fatal khi minh sua no
         for (Customer next : records.getCustomers().values())
         {
             System.out.println(next);
