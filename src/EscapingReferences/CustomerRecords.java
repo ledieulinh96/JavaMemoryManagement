@@ -19,7 +19,7 @@ public class CustomerRecords {
         return Collections.unmodifiableMap(this.records);
     }
 
-    public Customer getCustomerByName(String name) {
-        return new Customer(this.records.get(name));
+    public CustomerReadOnly getCustomerByName(String name) {
+        return this.records.get(name);
     }
 }

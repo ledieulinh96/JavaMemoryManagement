@@ -13,9 +13,9 @@ public class Main {
             System.out.println(next);
         }
 
-        Customer john = records.getCustomerByName("John");
+        CustomerReadOnly john = records.getCustomerByName("John");
         System.out.println(john.getName());
-        john.setName("Derek");
+        //john.setName("Derek"); se khong goi duoc
         System.out.println(john.getName());
 
         for (Customer next : records.getCustomers().values())
